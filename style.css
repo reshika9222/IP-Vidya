@@ -1,0 +1,279 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+/* NAVBAR */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 14px 80px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  justify-self: start;
+}
+
+.nav-center {
+  justify-self: center reminder;
+}
+
+.nav-center a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.nav-center a:hover {
+  color: #2563eb;
+}
+
+.nav-right {
+  justify-self: end;
+}
+
+.nav-logo {
+  height: 44px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #f8fbff, #eef4ff);
+}
+
+.hero-text {
+  width: 48%;
+}
+
+.tagline {
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #2563eb;
+}
+
+.hero-desc {
+  font-size: 17px;
+  color: #475569;
+  margin-bottom: 30px;
+  max-width: 520px;
+}
+
+.hero-buttons a {
+  margin-right: 14px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* HERO IMAGE FIX */
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+/* PAGE SECTIONS */
+.page-section {
+  padding: 80px 60px;
+  background: #ffffff;
+}
+
+.page-section h1 {
+  margin-bottom: 20px;
+}
+
+.contact-list li,
+.services-list li {
+  list-style: none;
+  margin: 12px 0;
+}
+
+.social-links a {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  margin-top: 60px;
+}
+
+/* CENTER CONTENT */
+.hero,
+.page-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* SERVICES LAYOUT FIX */
+.services {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.services-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT CONTENT — slight center shift */
+.services-left {
+  width: 60%;
+}
+
+/* RIGHT CTA */
+.services-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.services-right h3 {
+  font-size: 20px;
+  color: #0f172a;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .services-wrapper {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+
+  .services-left,
+  .services-right {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+/* SERVICES ALIGNMENT FIX */
+.services-left {
+  margin-left: 40px;   /* 👈 yeh value control karegi kitna center aaye */
+}
+
+.why {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 60px;
+
+  display: flex;
+  align-items: center;          /* vertical alignment */
+  justify-content: space-between;
+  gap: 80px;
+}
+.why-left {
+  max-width: 480px;
+}
+
+.why-left h2 {
+  margin-bottom: 16px;
+}
+
+.why-left ul {
+  padding-left: 20px;
+}
+
+.why-left li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.contact-details {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+
+  width: 380px;
+  padding: 32px 36px;
+  border-radius: 18px;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.contact-details a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
